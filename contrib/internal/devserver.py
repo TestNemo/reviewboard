@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-
+# python nemo for code review
 from __future__ import print_function, unicode_literals
 
 import getopt
@@ -24,7 +24,7 @@ def main():
     # Assign default settings
     server_host = DEFAULT_HOST
     server_port = DEFAULT_PORT
-
+# python nemo for code review
     # Do any command-line argument processing
     (opts, args) = getopt.getopt(sys.argv[1:], 'hH:p:')
 
@@ -62,6 +62,6 @@ def main():
     # And now just boot up the server
     os.system('%s ./reviewboard/manage.py runserver %s:%s --nostatic'
               % (sys.executable, server_host, server_port))
-
+# python nemo for code review
 if __name__ == "__main__":
     main()
